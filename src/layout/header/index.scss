@@ -1,0 +1,25 @@
+#header {
+  background-color: rgba(0, 0, 0, 0.726);
+  padding: 10px 0;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      a {
+        font-weight: 900;
+        font-size: 17px;
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+    .user {
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+    }
+  }
+}
