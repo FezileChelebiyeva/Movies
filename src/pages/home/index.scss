@@ -1,5 +1,4 @@
 #home {
-  background-color: black;
   padding: 60px 0;
   .home {
     width: 100%;
@@ -18,8 +17,9 @@
       cursor: pointer;
       .img {
         img {
-          width: 210px;
-          border-radius: 5px;
+          width: 215px;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
         }
       }
       .info {
@@ -27,7 +27,8 @@
         padding: 10px;
         background-color: rgba(56, 56, 56, 0.726);
         color: #fff;
-        border-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
       }
     }
   }

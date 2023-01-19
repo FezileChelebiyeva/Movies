@@ -1,0 +1,21 @@
+#details {
+  padding: 60px 0;
+  .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    .text{
+        .info{
+            display: flex;
+            column-gap: 20px;
+            color: rgb(30, 30, 252);
+        }
+        .actors{
+            .name{
+                font-weight: 900;
+            }
+        }
+    }
+  }
+}

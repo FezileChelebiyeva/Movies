@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-
+import "./index.scss";
 const Details = () => {
   const [movie, setMovie] = useState({});
   const { imdbID } = useParams();
@@ -31,11 +31,23 @@ const Details = () => {
             </div>
             <div className="about">{movie.Plot}</div>
             <div className="actors">
-              <p>Director: {movie?.Director}</p>
-              <p>Actors: {movie?.Actors}</p>
-              <p>Generes: {movie?.Genre}</p>
-              <p>Awards: {movie?.Awards}</p>
-              <p>Year: {movie?.Year}</p>
+              <p>
+                <span className="name">Director: </span> {movie?.Director}
+              </p>
+              <p>
+                <span className="name">Actors: </span> {movie?.Actors}
+              </p>
+              <p>
+                <span className="name">Generes: </span>
+                {movie?.Genre}
+              </p>
+              <p>
+                <span className="name">Awards: </span> {movie?.Awards}
+              </p>
+              <p>
+                <span className="name">Year: </span>
+                {movie?.Year}
+              </p>
             </div>
           </div>
           <div className="img">
