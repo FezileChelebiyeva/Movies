@@ -31,23 +31,26 @@ const Details = () => {
             </div>
             <div className="about">{movie.Plot}</div>
             <div className="actors">
-              <p>
-                <span className="name">Director: </span> {movie?.Director}
-              </p>
-              <p>
-                <span className="name">Actors: </span> {movie?.Actors}
-              </p>
-              <p>
-                <span className="name">Generes: </span>
-                {movie?.Genre}
-              </p>
-              <p>
-                <span className="name">Awards: </span> {movie?.Awards}
-              </p>
-              <p>
-                <span className="name">Year: </span>
-                {movie?.Year}
-              </p>
+              <div className="div">
+                <div className="name">Director </div>{" "}
+                <div className="value">{movie?.Director}</div>
+              </div>
+              <div className="div">
+                <div className="name">Actors </div>{" "}
+                <div className="value">{movie?.Actors}</div>
+              </div>
+              <div className="div">
+                <div className="name">Generes </div>
+                <div className="value">{movie?.Genre}</div>
+              </div>
+              <div className="div">
+                <div className="name">Languages </div>
+                <div className="value">{movie?.Language}</div>
+              </div>
+              <div className="div">
+                <div className="name">Awards </div>
+                <div className="value">{movie?.Awards}</div>
+              </div>
             </div>
           </div>
           <div className="img">
